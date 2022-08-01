@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "AsyncView",
+    name: "LoadableView",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "AsyncView",
-            targets: ["AsyncView"]
-        ),
+            name: "LoadableView",
+            targets: ["LoadableView"]
+        )
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "AsyncView",
+            name: "LoadableView",
             dependencies: []
-        ),
+        )
     ]
 )

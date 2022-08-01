@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ErrorView: View {
+    
     let error: Error
     let reloadAction: (() -> Void)?
 
@@ -16,5 +17,15 @@ struct ErrorView: View {
                 )
             }
         }
+    }
+}
+
+struct ErrorView_Previews: PreviewProvider {
+    static var previews: some View {
+        ErrorView(
+            error: NSError(domain: "112321321",
+            code: 1),
+            reloadAction: { }
+        )
     }
 }
